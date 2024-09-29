@@ -100,6 +100,8 @@ class MainActivity : AppCompatActivity() {
         }
             crearLogConMsg(antigue.toString())
         }
+
+        crearLogConMsg("Para git")
     }
 
     fun crearLog(): Unit {
