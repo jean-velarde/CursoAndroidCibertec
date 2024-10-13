@@ -34,6 +34,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    viewBinding {
+        enable = true
+    }
 }
 
 dependencies {
@@ -47,6 +50,7 @@ dependencies {
     implementation("io.ktor:ktor-client-serialization:2.3.4") // Serialización JSON
     implementation("io.ktor:ktor-serialization-kotlinx-json:2.3.4") // Serialización Kotlinx-JSON
     implementation("io.ktor:ktor-client-content-negotiation:2.3.4") // Plugin de negociación de contenido
+    implementation("com.squareup.picasso:picasso:2.71828") //picasso
     implementation(libs.androidx.constraintlayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
